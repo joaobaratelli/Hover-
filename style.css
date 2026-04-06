@@ -1,39 +1,45 @@
-/* Reset básico para tirar espaços em branco das bordas */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Isso faz o conteúdo ficar no centro da página toda */
 body {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;     /* Centraliza verticalmente */
-    height: 100vh;           /* Usa a altura total da tela */
-    background-color: #f0f0f0;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    background-color: #1a1a1a; /* Fundo escuro para destacar */
 }
 
 .navbar ul {
     list-style-type: none;
     display: flex;
-    gap: 30px; /* Espaço entre as palavras */
+    flex-direction: column; /* COLOCA UMA EMBAIXO DA OUTRA */
+    gap: 20px;              /* Espaço entre os itens */
+    text-align: center;
 }
 
 .navbar a {
     text-decoration: none;
-    color: #333;
-    font-family: 'Arial', sans-serif;
-    
-    /* LETRAS GRANDES */
-    font-size: 24px; 
-    font-weight: bold;
-    
-    padding: 10px 20px;
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 40px;        /* Letras bem grandes */
+    text-transform: uppercase;
     display: inline-block;
-    transition: all 0.4s ease; /* Deixa o efeito suave */
+    
+    /* A MÁGICA DA TRANSIÇÃO */
+    /* Colocando aqui, ele suaviza tanto a IDA quanto a VOLTA */
+    transition: all 0.5s ease-in-out; 
 }
 
+/* EFEITO HOVER (Ao passar o mouse) */
+.navbar a:hover {
+    color: #ff0055;         /* Muda para um rosa vibrante */
+    transform: scale(1.2);  /* Aumenta o tamanho */
+    letter-spacing: 10px;   /* As letras se afastam */
+    cursor: pointer;
+}
 /* EFEITO HOVER (Ao passar o mouse) */
 .navbar a:hover {
     color: #007bff;          /* Muda a cor da letra para azul */
