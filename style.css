@@ -1,26 +1,42 @@
-/* Estilização básica do menu */
+/* Reset básico para tirar espaços em branco das bordas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Isso faz o conteúdo ficar no centro da página toda */
+body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 100vh;           /* Usa a altura total da tela */
+    background-color: #f0f0f0;
+}
+
 .navbar ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-  background-color: #333;
-  padding: 15px;
-  border-radius: 8px;
+    list-style-type: none;
+    display: flex;
+    gap: 30px; /* Espaço entre as palavras */
 }
 
 .navbar a {
-  text-decoration: none;
-  color: white;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  padding: 8px 16px;
-  transition: all 0.3s ease; /* Faz o efeito ser suave */
+    text-decoration: none;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    
+    /* LETRAS GRANDES */
+    font-size: 24px; 
+    font-weight: bold;
+    
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.4s ease; /* Deixa o efeito suave */
 }
 
-/* EFEITO HOVER */
+/* EFEITO HOVER (Ao passar o mouse) */
 .navbar a:hover {
-  background-color: #ff9900; /* Muda a cor de fundo */
-  color: #000;              /* Muda a cor da letra */
-  border-radius: 4px;       /* Arredonda os cantos */
-  transform: scale(1.1);    /* Dá um leve zoom no item */
+    color: #007bff;          /* Muda a cor da letra para azul */
+    transform: scale(1.3);   /* Aumenta o tamanho (Efeito Zoom) */
+    letter-spacing: 2px;     /* Afasta um pouco as letras */
 }
