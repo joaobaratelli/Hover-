@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade Menu Hover</title>
+    
+    <style>
+        /* O CSS fica aqui dentro para o efeito funcionar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Faz as palavras ficarem uma embaixo da outra */
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column; 
+            gap: 20px;
+            text-align: center;
+        }
+
+        /* Estilo das letras (Grandes) */
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 45px;
+            font-weight: bold;
+            display: inline-block;
+            
+            /* TRANSIÇÃO: Faz a letra voltar ao normal suavemente quando tira o mouse */
+            transition: all 0.4s ease-in-out;
+        }
+
+        /* EFEITO HOVER: O que acontece quando passa o mouse */
+        nav a:hover {
+            color: #ff4500;        /* Muda a cor */
+            transform: scale(1.2); /* Aumenta o tamanho */
+            padding-left: 15px;    /* Dá um leve empurrão para o lado */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
