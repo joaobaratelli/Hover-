@@ -1,0 +1,26 @@
+/* Estilização básica do menu */
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: all 0.3s ease; /* Faz o efeito ser suave */
+}
+
+/* EFEITO HOVER */
+.navbar a:hover {
+  background-color: #ff9900; /* Muda a cor de fundo */
+  color: #000;              /* Muda a cor da letra */
+  border-radius: 4px;       /* Arredonda os cantos */
+  transform: scale(1.1);    /* Dá um leve zoom no item */
+}
